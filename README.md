@@ -1,2 +1,1 @@
-# dotfiles
-# to edit
+# .bashrc, init.vim & misc
