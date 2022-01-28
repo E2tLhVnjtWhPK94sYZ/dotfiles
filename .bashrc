@@ -111,6 +111,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-alias python=python3
-alias vim=nvim
