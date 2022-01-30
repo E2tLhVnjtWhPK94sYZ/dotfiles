@@ -1,2 +1,2 @@
 # .bashrc, init.vim & misc
-Bonjour Louis
+todo: symbolic links in a .sh
