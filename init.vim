@@ -11,7 +11,9 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'ap/vim-css-color'
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'tpope/vim-surround'
+Plug 'junegunn/fzf'
 call plug#end()
+
 
 let mapleader = ","
 set ignorecase
