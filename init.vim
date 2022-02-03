@@ -1,44 +1,45 @@
 colorscheme monokai
 
+set t_Co=256
+
 call plug#begin()
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'chr4/nginx.vim'
-Plug 'leafgarland/typescript-vim'
-Plug 'peitalin/vim-jsx-typescript'
+Plug 'jiangmiao/auto-pairs'
+Plug 'prettier/vim-prettier', { 'do': 'npm install --frozen-lockfile --production' }
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'ap/vim-css-color'
+Plug 'MaxMEllon/vim-jsx-pretty'
+Plug 'tpope/vim-surround'
 call plug#end()
 
-" dark red
+let mapleader = ","
+set ignorecase
+set smartcase
+set number
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+
 hi tsxTagName ctermfg=210
 hi tsxComponentName ctermfg=210
 hi tsxCloseComponentName ctermfg=210
-
-" orange
 hi tsxCloseString ctermfg=210
 hi tsxCloseTag ctermfg=210
 hi tsxCloseTagName ctermfg=210
 hi tsxAttributeBraces ctermfg=210
 hi tsxEqual ctermfg=210
-
-" yellow
 hi tsxAttrib ctermfg=210 cterm=italic
-
-" Set internal encoding of vim, not needed on neovim, since coc.nvim using some
-" unicode characters in the file autoload/float.vim
-set encoding=utf-8
 
 " TextEdit might fail if hidden is not set.
 set hidden
-
-" Some servers have issues with backup files, see #649.
-set nobackup
-set nowritebackup
 
 " Give more space for displaying messages.
 set cmdheight=2
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
-set updatetime=300
+set updatetime=750
 
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
@@ -46,9 +47,10 @@ set shortmess+=c
 let mapleader = ","
 set ignorecase
 set smartcase
-set belloff=all
 set number
 set shiftwidth=4
+set softtabstop=4
+set expandtab
 
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved.
