@@ -1,5 +1,4 @@
 colorscheme monokai
-" chromebook
 set t_Co=256
 
 call plug#begin()
