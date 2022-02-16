@@ -1,2 +1,2 @@
 # .bashrc, init.vim & misc
-todo: symbolic links in a .sh
+chmod 755 ~/dotfiles/start.sh
