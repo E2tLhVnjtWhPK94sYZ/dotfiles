@@ -1,6 +1,3 @@
-colorscheme monokai
-set t_Co=256
-
 call plug#begin()
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'chr4/nginx.vim'
@@ -11,9 +8,12 @@ Plug 'ap/vim-css-color'
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'tpope/vim-surround'
 Plug 'junegunn/fzf'
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 call plug#end()
 
-
+set t_Co=256
+syntax on
+colorscheme tokyonight
 let mapleader = ","
 set ignorecase
 set smartcase
