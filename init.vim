@@ -14,23 +14,6 @@ call plug#end()
 set t_Co=256
 syntax on
 colorscheme tokyonight
-let mapleader = ","
-set ignorecase
-set smartcase
-set number
-set shiftwidth=4
-set softtabstop=4
-set expandtab
-
-hi tsxTagName ctermfg=210
-hi tsxComponentName ctermfg=210
-hi tsxCloseComponentName ctermfg=210
-hi tsxCloseString ctermfg=210
-hi tsxCloseTag ctermfg=210
-hi tsxCloseTagName ctermfg=210
-hi tsxAttributeBraces ctermfg=210
-hi tsxEqual ctermfg=210
-hi tsxAttrib ctermfg=210 cterm=italic
 
 " TextEdit might fail if hidden is not set.
 set hidden
