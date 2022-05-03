@@ -104,3 +104,4 @@ fi
 
 TERM=xterm-256color
 export SUDO_EDITOR=nvim
+neofetch
