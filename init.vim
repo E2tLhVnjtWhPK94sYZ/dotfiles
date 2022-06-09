@@ -8,7 +8,8 @@ Plug 'ap/vim-css-color'
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'tpope/vim-surround'
 Plug 'junegunn/fzf'
-Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+" need Neovim >= 0.5 for this colorscheme
+" Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 call plug#end()
 
 set t_Co=256
