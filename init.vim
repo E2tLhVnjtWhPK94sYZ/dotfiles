@@ -37,6 +37,9 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
+" mappings
+imap jj <Esc>
+
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved.
 if has("nvim-0.5.0") || has("patch-8.1.1564")
